@@ -9,11 +9,8 @@ import java.sql.SQLOutput;
 public class AprendendoSpringApplication {
 
 	public static void main(String[] args) {
-		// SpringApplication.run(AprendendoSpringApplication.class, args);
-        Usuario carlos = new Usuario("Carlos", "carlosdasilva@gmail.com", "papao23");
-        System.out.println(carlos.getNome());
-        carlos.setNome("Carlos Oliveira");
-        System.out.println(carlos.getNome());
+		SpringApplication.run(AprendendoSpringApplication.class, args);
+
 	}
 
 }
