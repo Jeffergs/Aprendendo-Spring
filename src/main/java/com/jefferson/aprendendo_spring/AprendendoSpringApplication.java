@@ -3,11 +3,17 @@ package com.jefferson.aprendendo_spring;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.sql.SQLOutput;
+
 @SpringBootApplication
 public class AprendendoSpringApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AprendendoSpringApplication.class, args);
+		// SpringApplication.run(AprendendoSpringApplication.class, args);
+        Usuario carlos = new Usuario("Carlos", "carlosdasilva@gmail.com", "papao23");
+        System.out.println(carlos.getNome());
+        carlos.setNome("Carlos Oliveira");
+        System.out.println(carlos.getNome());
 	}
 
 }
